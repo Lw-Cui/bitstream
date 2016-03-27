@@ -2,9 +2,9 @@ CC = icc -std=c++11
 CXXFLAG	= -g -O0 -Wall -Wextra -W -I.
 
 TESTDIR = test
-SRCDIR	= src
+SRCDIR	= bitsrc
 BUILDDIR = build
-HEADERDIR = header
+HEADERDIR = bitheader
 
 HEADER = $(wildcard $(HEADERDIR)/*.hpp)
 SRC = $(wildcard $(SRCDIR)/*.cpp)
