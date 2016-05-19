@@ -1,4 +1,3 @@
-set(BITSTREAM_SOURCE bitstream.cpp)
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
-add_library(bitstream ${BITSTREAM_SOURCE})
-install (TARGETS bitstream LIBRARY DESTINATION lib/bitstream ARCHIVE DESTINATION lib/bitstream)
+include_directories(${BITSTREAM_INCLUDE_DIRS})
+add_library(${BITSTREAM_LIBRARIES} bitstream.cpp)
+target_link_libraries(${BITSTREAM_LIBRARIES})
