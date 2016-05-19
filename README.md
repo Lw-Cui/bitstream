@@ -8,11 +8,14 @@ Bit fstream for C++.
 mkdir build && cd build
 cmake ..
 make
-make install
 ```
 ### Submodule
 When using a git submodule and CMake-buildsystem, add the following lines to your `CMakeLists.txt`:
 ```
-ADD_SUBDIRECTORY(ext/bitstream) # Change `ext/bitstream` to a directory according to your setup
-INCLUDE_DIRECTORIES(${BITSTRAM_SOURCE_DIR}/include)
+ADD_SUBDIRECTORY(bitstream)
+```
+This will produce two important CMake variables, CPR_INCLUDE_DIRS and CPR_LIBRARIES, which you'll use in the typical way:
+```
+include_directories(${BITSTREAM_INCLUDE_DIRS})
+target_link_libraries(your_target_name ${BITSTREAM_LIBRARIES})
 ```
