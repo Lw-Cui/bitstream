@@ -12,3 +12,4 @@ set(BITSTREAM_LIBRARIES bitstream CACHE INTERNAL "")
 set(BITSTREAM_INCLUDE_DIRS ${CMAKE_CURRENT_SOURCE_DIR}/include CACHE INTERNAL "")
 
 add_subdirectory(src)
+add_subdirectory(test)
