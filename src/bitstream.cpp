@@ -71,19 +71,3 @@ void obstream::write_buffer() {
 	fout.write(reinterpret_cast<const char*>(&tmp), sizeof(tmp));
 	buffer.reset();
 }
-
-ibstream& bit::operator>> (ibstream& bin, char& c) {
-	return bin.read_byte(c);
-}
-
-ibstream& bit::operator>> (ibstream& bin, bool& b) {
-	return bin.read_bit(b);
-}
-
-obstream& bit::operator<< (obstream& bout, const char &c) {
-	return bout.write_byte(c);
-}
-
-obstream& bit::operator<< (obstream& bout, const bool &b) {
-	return bout.write_bit(b);
-}
