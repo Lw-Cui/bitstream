@@ -1,3 +1,6 @@
 [submodule "Tiny-server"]
 	path = Tiny-server
 	url = git@github.com:Lw-Cui/Tiny-server.git
+[submodule "json"]
+	path = json
+	url = git@github.com:nlohmann/json.git
