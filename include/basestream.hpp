@@ -8,7 +8,7 @@ namespace bit {
 
 	class iBaseStream {
 	public:
-		iBaseStream():sum{1 << SIZE - 2}, cnt{0}, valid{true} {}
+		iBaseStream():sum{1 << (SIZE - 2)}, cnt{0}, valid{true} {}
 		virtual ~iBaseStream(){}
 		iBaseStream(const iBaseStream &) = delete;
 		iBaseStream(iBaseStream &&) = delete;
